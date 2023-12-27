@@ -13,10 +13,10 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 12px
-yabai -m config top_padding 8
-yabai -m config bottom_padding 8
-yabai -m config left_padding 8
-yabai -m config right_padding 8
+yabai -m config top_padding 10
+yabai -m config bottom_padding 10
+yabai -m config left_padding 10
+yabai -m config right_padding 10
 yabai -m config window_gap 8
 
 
@@ -44,17 +44,20 @@ yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^Skype$" manage=off
 yabai -m rule --add app="^Microsoft Teams$" manage=off
+# yabai -m rule --add app="^VLC$" manage=off
 
 # set opacity to specific apps
 yabai -m rule --add app="^Code$" opacity=0.98
-yabai -m rule --add app="^Brave Browser$" opacity=0.99
+yabai -m rule --add app="^Brave Browser$" opacity=0.96
 yabai -m rule --add app="^Alacritty$" opacity=1
 yabai -m rule --add app="^Hyperkey$" opacity=1
 yabai -m rule --add app="^Microsoft Teams$" opacity=0.99
 yabai -m rule --add app="^Skype$" opacity=0.99
+yabai -m rule --add app="^Microsoft Outlook$" opacity=0.99
+yabai -m rule --add app="^VLC$" opacity=1
 
 #testing
 yabai -m config window_opacity on
 yabai -m config active_window_opacity 0.95
-yabai -m config normal_window_opacity 0.95
+yabai -m config normal_window_opacity 0.90
 
