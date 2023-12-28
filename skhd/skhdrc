@@ -59,7 +59,7 @@ alt - h : yabai -m window --focus west
 alt - l : yabai -m window --focus east
 
 # close window
-cmd + ctrl + alt - w : yabai -m window --close
+cmd + ctrl + alt - w : yabai -m space --destroy
 
 
 # add arrow keys
