@@ -1,2 +1,5 @@
 .DS_Store
 .DS_Store?
+tmux/plugins
+spotify-tui/.*
+spotify-tui/client.yml
