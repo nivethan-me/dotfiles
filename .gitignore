@@ -3,3 +3,4 @@
 tmux/plugins
 spotify-tui/.*
 spotify-tui/client.yml
+spotifyd
