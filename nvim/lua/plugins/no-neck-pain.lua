@@ -1,9 +1,9 @@
 return {
 	"shortcuts/no-neck-pain.nvim",
-	enabled = false,
+	enabled = true,
 	lazy = false,
 	config = function()
-		require("no-neck-pain").setup({
+		local noNeckPain = require("no-neck-pain").setup({
 			width = 120,
 			autocmds = {
 				enableOnVimEnter = true,
@@ -40,10 +40,14 @@ return {
 				scratchPad = "<Leader>zs",
 			},
 			buffers = {
+        scratchPad={
+          enabled=false
+        },
 				wo = {
 					fillchars = "eob: ",
 				},
 			},
 		})
+
 	end,
 }

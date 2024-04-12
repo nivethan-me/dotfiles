@@ -21,12 +21,15 @@ cmd + ctrl + alt + shift - 4 : yabai -m window --space 4; yabai -m space --focus
 cmd + ctrl + alt + shift - 5 : yabai -m window --space 5; yabai -m space --focus 5
 cmd + ctrl + alt + shift - 6 : yabai -m window --space 6; yabai -m space --focus 6
 cmd + ctrl + alt + shift - 7 : yabai -m window --space 7; yabai -m space --focus 7
+cmd + ctrl + alt + shift - 8 : yabai -m window --space 8; yabai -m space --focus 8
 
 #cmd + ctrl + alt + shift - n : yabai -m window --space last; yabai -m space --focus last
 
+# focus monitor
+cmd + ctrl + alt - 0x32  : yabai -m display --focus prev
 
 # focus desktop
-cmd + ctrl + alt - 0x32 : yabai -m space --focus recent
+#cmd + ctrl + alt - 0x32 : yabai -m space --focus recent
 cmd + ctrl + alt - h : yabai -m space --focus prev || yabai -m space --focus last
 cmd + ctrl + alt - l : yabai -m space --focus next || yabai -m space --focus first
 cmd + ctrl + alt - g : yabai -m space --focus first
@@ -43,6 +46,9 @@ cmd + ctrl + alt - 7 : yabai -m space --focus 7
 # move current space
 # cmd + ctrl + alt - , : yabai -m space --move prev
 # cmd + ctrl + alt - . : yabai -m space --move next
+
+#cmd + ctrl + alt - , : yabai -m space --move prev
+#cmd + ctrl + alt - . : yabai -m space --move next
 
 # remove current space
 # cmd + ctrl + alt - x : yabai -m space --destroy "$(yabai -m query --spaces --display | jq -r 'map(select(."has-focus" == true))[0].index')"

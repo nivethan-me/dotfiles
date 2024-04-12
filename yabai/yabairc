@@ -48,13 +48,14 @@ yabai -m rule --add app="^Microsoft Teams$" manage=off
 
 # set opacity to specific apps
 yabai -m rule --add app="^Code$" opacity=0.98
-yabai -m rule --add app="^Brave Browser$" opacity=0.96
+yabai -m rule --add app="^Brave Browser$" opacity=0.99
 yabai -m rule --add app="^Alacritty$" opacity=1
 yabai -m rule --add app="^Hyperkey$" opacity=1
 yabai -m rule --add app="^Microsoft Teams$" opacity=0.99
 yabai -m rule --add app="^Skype$" opacity=0.99
 yabai -m rule --add app="^Microsoft Outlook$" opacity=0.99
 yabai -m rule --add app="^VLC$" opacity=1
+yabai -m rule --add app="^Koodo Reader$" opacity=1
 
 #testing
 yabai -m config window_opacity on
