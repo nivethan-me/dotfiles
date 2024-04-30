@@ -19,3 +19,5 @@ vim.opt.laststatus = 3
 --search is case-insensitive if only use lowercase letters; otherwise search will be in case-sensitive mode.
 vim.cmd("set ignorecase")
 vim.cmd("set smartcase")
+
+vim.opt.scrolloff = 10
