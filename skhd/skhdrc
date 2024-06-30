@@ -26,7 +26,7 @@ cmd + ctrl + alt + shift - 8 : yabai -m window --space 8; yabai -m space --focus
 #cmd + ctrl + alt + shift - n : yabai -m window --space last; yabai -m space --focus last
 
 # focus monitor
-cmd + ctrl + alt - 0x32  : yabai -m display --focus prev
+cmd + ctrl + alt - tab  : yabai -m display --focus recent # skhd not working with this command
 
 # focus desktop
 #cmd + ctrl + alt - 0x32 : yabai -m space --focus recent

@@ -30,12 +30,16 @@ return {
 
 			lspconfig.tsserver.setup({
 				capabilities = capabilities,
-				filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+				filetypes = { "typescript", "javascript", "typescriptreact", "typescript.tsx" },
 			})
 
-      lspconfig.tailwindcss.setup({
-        capabilities = capabilities
-      })
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.tailwindcss.setup({
+				capabilities = capabilities,
+			})
 
 			-- HTML SERVER
 			lspconfig.html.setup({
@@ -48,7 +52,6 @@ return {
 					},
 				},
 			})
-
 		end,
 	},
 }
