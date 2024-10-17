@@ -3,6 +3,9 @@ return {
 	build = ":TSUpdate",
 	config = function()
 		local config = require("nvim-treesitter.configs")
+
+    vim.treesitter.language.register("sql", "<vim-dadbod-ui-query-filetype>")
+
 		config.setup({
 			auto_install = true,
       ensure_installed = {
@@ -13,7 +16,8 @@ return {
 				"json",
 				"vim",
 				"lua",
-        'html',
+        "html",
+        "sql"
 			},
 			highlight = { enable = true },
 			indent = { enable = true },
