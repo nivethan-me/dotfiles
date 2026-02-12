@@ -48,6 +48,8 @@ yabai -m rule --add app="^VLC$" manage=off
 
 # set opacity to specific apps
 yabai -m rule --add app="^Code$" opacity=0.98
+yabai -m rule --add app="^Trae$" opacity=0.99
+yabai -m rule --add app="^sioyek$" opacity=0.99
 yabai -m rule --add app="^Brave Browser$" opacity=0.99
 yabai -m rule --add app="^Alacritty$" opacity=1
 yabai -m rule --add app="^Hyperkey$" opacity=1

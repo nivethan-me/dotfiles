@@ -23,7 +23,13 @@ return {
             "markdown.mdx",
           },
         }),
+        null_ls.builtins.formatting.csharpier,
         null_ls.builtins.formatting.gofmt,
+        null_ls.builtins.formatting.black.with({
+          filetypes = {
+            "python"
+          }
+        })
       },
     })
   end,

@@ -12,6 +12,7 @@ vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 vim.keymap.set("n", "<leader>.", vim.lsp.buf.code_action, {})
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, {})
+vim.keymap.set("n", "<leader>lo", "<Cmd>OrganizeImports<cr>", { silent = true })
 
 vim.keymap.set("n", "<leader>df", vim.diagnostic.open_float)
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
@@ -26,3 +27,8 @@ vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal position=float<CR>"
 -- vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 -- vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 -- vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+-- Keep cursor centered after half-page scrolls
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { silent = true })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { silent = true })
+

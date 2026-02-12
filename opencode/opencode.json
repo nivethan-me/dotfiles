@@ -1,0 +1,34 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "chrome-devtools": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ],
+      "enabled": true
+    }
+  },
+  "experimental": {
+    "disable_paste_summary": true
+  },
+  "plugin": [
+    "@mohak34/opencode-notifier@latest"
+  ],
+  "provider": {
+    "minimax": {
+      "npm": "@ai-sdk/anthropic",
+      "options": {
+        "baseURL": "https://api.minimax.io/anthropic/v1",
+        "apiKey": "sk-cp-vtlOKX8eOXE8jKGRIpDQP8A0xLvc1rsvhFDB3zuTJgwM662eRAO0yiH5QfPs3eWuQZFzipoX8xwjeMGZUq4UodelOG-sBviCDy8cwbhuXChtQHkxbdaCp38"
+      },
+      "models": {
+        "MiniMax-M2.1": {
+          "name": "MiniMax-M2.1"
+        }
+      }
+    }
+  }
+}

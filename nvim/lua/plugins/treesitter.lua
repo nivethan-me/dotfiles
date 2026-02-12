@@ -17,6 +17,7 @@ return {
 				"vim",
 				"lua",
         "html",
+        "c_sharp",
         "sql"
 			},
 			highlight = { enable = true },

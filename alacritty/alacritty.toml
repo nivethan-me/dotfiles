@@ -1,0 +1,25 @@
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "FiraCode Nerd Font Mono"
+style = "Regular"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = true
+opacity = 0.97
+
+[window.padding]
+x = 12
+y = 0
+
+[general]
+live_config_reload = true
+
+# make shift+enter to add new line in opencode 
+[keyboard]
+bindings = [
+    { key = "Return", mods = "Shift", chars = "\n" }
+]
